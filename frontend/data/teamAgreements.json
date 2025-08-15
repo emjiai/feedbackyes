@@ -1,0 +1,113 @@
+
+{
+    "agreements": [
+      {
+        "id": "comm-agreement-1",
+        "title": "Clear Communication Standards",
+        "pillar": "communication",
+        "status": "active",
+        "createdBy": "Team Lead",
+        "createdDate": "2025-01-15",
+        "lastModified": "2025-02-01",
+        "content": "We commit to:\n• Clarifying expectations upfront for all projects\n• Using specific examples when giving feedback\n• Confirming understanding before ending discussions\n• Responding to messages within 24 hours",
+        "linkedScenarios": ["unclear-expectations"],
+        "endorsements": 12,
+        "tags": ["expectations", "feedback", "response-time"]
+      },
+      {
+        "id": "collab-agreement-1",
+        "title": "Collaboration Principles",
+        "pillar": "collaboration",
+        "status": "active",
+        "createdBy": "Scrum Master",
+        "createdDate": "2025-01-20",
+        "lastModified": "2025-01-20",
+        "content": "Our collaboration commitments:\n• Document handoffs clearly with acceptance criteria\n• Pair program on complex features\n• Share knowledge through weekly tech talks\n• Celebrate team wins together",
+        "linkedScenarios": ["missed-handoff"],
+        "endorsements": 15,
+        "tags": ["handoffs", "pairing", "knowledge-sharing"]
+      },
+      {
+        "id": "decision-agreement-1",
+        "title": "Decision Making Framework",
+        "pillar": "decision-making",
+        "status": "active",
+        "createdBy": "Product Manager",
+        "createdDate": "2025-01-10",
+        "lastModified": "2025-02-05",
+        "content": "Decision principles:\n• Use RACI matrix for major decisions\n• Document decisions in shared wiki\n• Allow 48-hour comment period for reversible decisions\n• Escalate only after team discussion",
+        "linkedScenarios": ["decision-reversal"],
+        "endorsements": 10,
+        "tags": ["RACI", "documentation", "escalation"]
+      },
+      {
+        "id": "values-agreement-1",
+        "title": "Living Our Values",
+        "pillar": "values-culture",
+        "status": "active",
+        "createdBy": "HR Partner",
+        "createdDate": "2025-01-05",
+        "lastModified": "2025-01-30",
+        "content": "We demonstrate our values by:\n• Giving credit where due\n• Speaking up when values are compromised\n• Supporting diverse perspectives\n• Acting with integrity even when no one is watching",
+        "linkedScenarios": ["cultural-misalignment"],
+        "endorsements": 18,
+        "tags": ["integrity", "diversity", "recognition"]
+      },
+      {
+        "id": "wellbeing-agreement-1",
+        "title": "Wellbeing Boundaries",
+        "pillar": "stress-wellbeing",
+        "status": "active",
+        "createdBy": "Team Lead",
+        "createdDate": "2025-01-25",
+        "lastModified": "2025-01-25",
+        "content": "Wellbeing commitments:\n• No meetings during lunch hours\n• Respect off-hours unless critical\n• Encourage use of PTO\n• Regular workload check-ins\n• Normalize saying 'no' to maintain quality",
+        "linkedScenarios": ["workload-boundaries"],
+        "endorsements": 20,
+        "tags": ["boundaries", "work-life-balance", "PTO"]
+      },
+      {
+        "id": "conflict-agreement-1",
+        "title": "Conflict Resolution Process",
+        "pillar": "conflict-management",
+        "status": "draft",
+        "createdBy": "Agile Coach",
+        "createdDate": "2025-02-01",
+        "lastModified": "2025-02-08",
+        "content": "When conflicts arise:\n1. Address directly with the person first\n2. Focus on the issue, not the person\n3. Seek to understand before being understood\n4. Find win-win solutions\n5. Involve mediator only if needed",
+        "linkedScenarios": ["peer-disagreement"],
+        "endorsements": 8,
+        "tags": ["resolution", "mediation", "direct-communication"]
+      },
+      {
+        "id": "general-agreement-1",
+        "title": "Team Charter",
+        "pillar": "general",
+        "status": "active",
+        "createdBy": "Entire Team",
+        "createdDate": "2025-01-01",
+        "lastModified": "2025-02-10",
+        "content": "Our team charter:\n\nPurpose: Deliver exceptional value through innovation and collaboration\n\nCore Behaviors:\n• Psychological safety is non-negotiable\n• Continuous learning is expected\n• Feedback is a gift\n• We succeed or fail as a team\n\nMeeting Norms:\n• Cameras on for engagement\n• One conversation at a time\n• Start and end on time\n• Action items assigned before closing",
+        "linkedScenarios": [],
+        "endorsements": 25,
+        "tags": ["charter", "norms", "psychological-safety"]
+      }
+    ],
+    "templates": [
+      {
+        "id": "template-1",
+        "title": "Basic Agreement Template",
+        "content": "We agree to:\n• [Specific behavior 1]\n• [Specific behavior 2]\n• [Specific behavior 3]\n\nThis helps us [desired outcome]."
+      },
+      {
+        "id": "template-2",
+        "title": "Problem-Solution Template",
+        "content": "Challenge: [Describe the issue]\n\nOur commitment:\n• [Solution 1]\n• [Solution 2]\n\nSuccess looks like: [Describe success]"
+      },
+      {
+        "id": "template-3",
+        "title": "Values-Based Template",
+        "content": "Value: [Core value]\n\nWe demonstrate this by:\n• [Behavior 1]\n• [Behavior 2]\n\nWe avoid:\n• [Anti-pattern 1]\n• [Anti-pattern 2]"
+      }
+    ]
+  }

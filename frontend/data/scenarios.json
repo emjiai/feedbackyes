@@ -1,0 +1,191 @@
+
+{
+    "scenarios": [
+      {
+        "id": "unclear-expectations",
+        "title": "Unclear Expectations",
+        "pillar": "communication",
+        "difficulty": "medium",
+        "estimatedTime": 10,
+        "description": "Practice addressing unclear project requirements with your manager",
+        "context": "Your manager assigned you a project last week, but the requirements keep changing and you're unsure about priorities.",
+        "roles": [
+          { "id": "employee", "name": "Employee (You)" },
+          { "id": "manager", "name": "Manager" }
+        ],
+        "suggestedStyle": "sbi",
+        "feedbackType": "corrective",
+        "culturalAdaptations": {
+          "east-asia": "Use indirect language, possibly through a mediator",
+          "latin-america": "Build personal rapport first, show understanding",
+          "middle-east": "Private discussion, preserve dignity"
+        },
+        "initialPrompt": "Hi, I wanted to discuss the project you assigned last week. I'm finding it challenging to make progress.",
+        "aiPersona": {
+          "name": "Alex Chen",
+          "role": "Engineering Manager",
+          "personality": "Busy, sometimes distracted, well-intentioned but not always clear"
+        },
+        "learningObjectives": [
+          "Express concerns without blame",
+          "Ask clarifying questions",
+          "Propose solutions"
+        ],
+        "successCriteria": {
+          "mustInclude": ["specific examples", "impact statement", "proposed solution"],
+          "mustAvoid": ["blame language", "generalizations", "emotional accusations"]
+        }
+      },
+      {
+        "id": "missed-handoff",
+        "title": "Missed Handoff",
+        "pillar": "collaboration",
+        "difficulty": "easy",
+        "estimatedTime": 8,
+        "description": "Address a missed deadline with a peer colleague",
+        "context": "Your colleague was supposed to deliver their part of the project yesterday, but it's still not complete.",
+        "roles": [
+          { "id": "peer1", "name": "You" },
+          { "id": "peer2", "name": "Colleague" }
+        ],
+        "suggestedStyle": "nvc",
+        "feedbackType": "corrective",
+        "culturalAdaptations": {
+          "north-america": "Direct but empathetic approach",
+          "east-asia": "Focus on group impact, save face",
+          "africa": "Community-oriented solution, ubuntu principle"
+        },
+        "initialPrompt": "Hey, I noticed the design mockups weren't ready yesterday. Can we talk about the timeline?",
+        "aiPersona": {
+          "name": "Jordan Smith",
+          "role": "Senior Designer",
+          "personality": "Apologetic, overwhelmed, collaborative"
+        },
+        "learningObjectives": [
+          "Express needs without judgment",
+          "Show empathy",
+          "Find collaborative solutions"
+        ],
+        "successCriteria": {
+          "mustInclude": ["empathy", "specific needs", "collaborative tone"],
+          "mustAvoid": ["accusations", "ultimatums", "dismissive language"]
+        }
+      },
+      {
+        "id": "decision-reversal",
+        "title": "Reversing a Decision",
+        "pillar": "decision-making",
+        "difficulty": "hard",
+        "estimatedTime": 15,
+        "description": "Discuss concerns about a recent team decision that needs reconsideration",
+        "context": "The team decided to use a new technology stack, but after initial implementation, you've discovered serious issues.",
+        "roles": [
+          { "id": "team-member", "name": "Team Member (You)" },
+          { "id": "tech-lead", "name": "Tech Lead" }
+        ],
+        "suggestedStyle": "radical-candor",
+        "initialPrompt": "I've been working with the new stack we chose, and I have some significant concerns we need to discuss.",
+        "aiPersona": {
+          "name": "Sam Patel",
+          "role": "Tech Lead",
+          "personality": "Confident, invested in the decision, open to data"
+        },
+        "learningObjectives": [
+          "Challenge decisions respectfully",
+          "Present data clearly",
+          "Maintain team cohesion"
+        ],
+        "successCriteria": {
+          "mustInclude": ["specific data", "respect for past decision", "forward-looking solutions"],
+          "mustAvoid": ["I told you so", "personal attacks", "undermining authority"]
+        }
+      },
+      {
+        "id": "cultural-misalignment",
+        "title": "Addressing Cultural Misalignment",
+        "pillar": "values-culture",
+        "difficulty": "hard",
+        "estimatedTime": 12,
+        "description": "Discuss behavior that conflicts with team values",
+        "context": "A team member has been taking sole credit for collaborative work, which goes against your team's values.",
+        "roles": [
+          { "id": "concerned-peer", "name": "You" },
+          { "id": "team-member", "name": "Team Member" }
+        ],
+        "suggestedStyle": "nvc",
+        "initialPrompt": "I wanted to talk about something I observed in yesterday's presentation to leadership.",
+        "aiPersona": {
+          "name": "Riley Johnson",
+          "role": "Senior Analyst",
+          "personality": "Ambitious, defensive initially, capable of reflection"
+        },
+        "learningObjectives": [
+          "Address values conflicts diplomatically",
+          "Focus on team impact",
+          "Build understanding"
+        ],
+        "successCriteria": {
+          "mustInclude": ["specific observation", "team values reference", "invitation to dialogue"],
+          "mustAvoid": ["character attacks", "assumptions about intent", "threats"]
+        }
+      },
+      {
+        "id": "workload-boundaries",
+        "title": "Setting Workload Boundaries",
+        "pillar": "stress-wellbeing",
+        "difficulty": "medium",
+        "estimatedTime": 10,
+        "description": "Communicate about unsustainable workload with your manager",
+        "context": "You've been working 60+ hours for the past month and it's affecting your wellbeing and work quality.",
+        "roles": [
+          { "id": "employee", "name": "Employee (You)" },
+          { "id": "manager", "name": "Manager" }
+        ],
+        "suggestedStyle": "feedforward",
+        "initialPrompt": "I'd like to discuss my current workload and how we can make it more sustainable going forward.",
+        "aiPersona": {
+          "name": "Morgan Davis",
+          "role": "Department Manager",
+          "personality": "Results-focused, unaware of the issue, reasonable when informed"
+        },
+        "learningObjectives": [
+          "Communicate boundaries professionally",
+          "Propose workable solutions",
+          "Maintain positive relationship"
+        ],
+        "successCriteria": {
+          "mustInclude": ["specific examples", "impact on work quality", "proposed adjustments"],
+          "mustAvoid": ["complaints without solutions", "emotional outbursts", "ultimatums"]
+        }
+      },
+      {
+        "id": "peer-disagreement",
+        "title": "Resolving Peer Disagreement",
+        "pillar": "conflict-management",
+        "difficulty": "medium",
+        "estimatedTime": 12,
+        "description": "Navigate a disagreement about project approach with a peer",
+        "context": "You and a colleague have opposing views on the technical approach for a critical project feature.",
+        "roles": [
+          { "id": "developer1", "name": "You" },
+          { "id": "developer2", "name": "Peer Developer" }
+        ],
+        "suggestedStyle": "sbi",
+        "initialPrompt": "I know we have different views on the authentication approach. Can we work through this together?",
+        "aiPersona": {
+          "name": "Casey Williams",
+          "role": "Senior Developer",
+          "personality": "Technically strong, passionate about their approach, collaborative when engaged properly"
+        },
+        "learningObjectives": [
+          "Find common ground",
+          "Separate positions from interests",
+          "Build consensus"
+        ],
+        "successCriteria": {
+          "mustInclude": ["acknowledgment of other view", "objective criteria", "collaborative language"],
+          "mustAvoid": ["dismissive language", "personal superiority", "win-lose framing"]
+        }
+      }
+    ]
+  }

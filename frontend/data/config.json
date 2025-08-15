@@ -1,0 +1,379 @@
+
+{
+    "brand": {
+      "name": "FeedBackYes™",
+      "tagline": "Practice Difficult Conversations with Confidence",
+      "logo": "/logo.png",
+      "colors": {
+        "primary": "#6366f1",
+        "secondary": "#8b5cf6",
+        "accent": "#ec4899",
+        "success": "#10b981",
+        "warning": "#f59e0b",
+        "error": "#ef4444",
+        "background": "#ffffff",
+        "surface": "#f9fafb",
+        "text": "#111827",
+        "textSecondary": "#6b7280"
+      }
+    },
+    "models": [
+      {
+        "id": "openai",
+        "name": "OpenAI GPT-4",
+        "description": "Advanced language model with natural conversation",
+        "default": true
+      },
+      {
+        "id": "gemini",
+        "name": "Google Gemini",
+        "description": "Google's multimodal AI model"
+      },
+      {
+        "id": "elevenlabs",
+        "name": "ElevenLabs",
+        "description": "Premium voice synthesis"
+      },
+      {
+        "id": "opensource",
+        "name": "Open Source",
+        "description": "Community-driven models"
+      }
+    ],
+    "languages": [
+      { "code": "en", "name": "English", "default": true },
+      { "code": "es", "name": "Spanish" },
+      { "code": "fr", "name": "French" },
+      { "code": "de", "name": "German" },
+      { "code": "zh", "name": "Mandarin" },
+      { "code": "hi", "name": "Hindi" },
+      { "code": "ar", "name": "Arabic" },
+      { "code": "pt", "name": "Portuguese" },
+      { "code": "ja", "name": "Japanese" },
+      { "code": "it", "name": "Italian" }
+    ],
+    "pillars": [
+      {
+        "id": "communication",
+        "name": "Communication",
+        "icon": "💬",
+        "description": "Clear and effective communication"
+      },
+      {
+        "id": "collaboration",
+        "name": "Collaboration",
+        "icon": "🤝",
+        "description": "Working together effectively"
+      },
+      {
+        "id": "decision-making",
+        "name": "Decision Making",
+        "icon": "🎯",
+        "description": "Making informed choices"
+      },
+      {
+        "id": "values-culture",
+        "name": "Values & Culture",
+        "icon": "🌟",
+        "description": "Aligning with organizational values"
+      },
+      {
+        "id": "stress-wellbeing",
+        "name": "Stress & Wellbeing",
+        "icon": "🧘",
+        "description": "Managing stress and maintaining balance"
+      },
+      {
+        "id": "conflict-management",
+        "name": "Conflict Management",
+        "icon": "⚖️",
+        "description": "Resolving conflicts constructively"
+      }
+    ],
+    "feedbackTypes": [
+      {
+        "id": "positive",
+        "name": "Positive Feedback",
+        "description": "Recognizing and reinforcing good performance",
+        "icon": "👍",
+        "tone": "appreciative"
+      },
+      {
+        "id": "corrective",
+        "name": "Corrective Feedback",
+        "description": "Addressing areas that need improvement",
+        "icon": "🔧",
+        "tone": "constructive"
+      },
+      {
+        "id": "difficult",
+        "name": "Difficult Conversation",
+        "description": "Handling sensitive or challenging topics",
+        "icon": "⚠️",
+        "tone": "serious"
+      },
+      {
+        "id": "developmental",
+        "name": "Developmental Feedback",
+        "description": "Focus on growth and skill building",
+        "icon": "📈",
+        "tone": "encouraging"
+      },
+      {
+        "id": "recognition",
+        "name": "Recognition & Appreciation",
+        "description": "Celebrating achievements and contributions",
+        "icon": "🎉",
+        "tone": "celebratory"
+      }
+    ],
+    "feedbackMethods": [
+      {
+        "id": "sbi",
+        "name": "SBI",
+        "fullName": "Situation-Behavior-Impact",
+        "description": "Describe the situation, observed behavior, and its impact",
+        "steps": ["Situation", "Behavior", "Impact"],
+        "bestFor": ["positive", "corrective"]
+      },
+      {
+        "id": "star",
+        "name": "STAR",
+        "fullName": "Situation-Task-Action-Result",
+        "description": "Context, task, actions taken, and outcomes achieved",
+        "steps": ["Situation/Task", "Action", "Result"],
+        "bestFor": ["positive", "developmental"]
+      },
+      {
+        "id": "desc",
+        "name": "DESC",
+        "fullName": "Describe-Express-Specify-Consequences",
+        "description": "Clear communication for difficult conversations",
+        "steps": ["Describe", "Express", "Specify", "Consequences"],
+        "bestFor": ["corrective", "difficult"]
+      },
+      {
+        "id": "eec",
+        "name": "EEC",
+        "fullName": "Example-Effect-Change/Continue",
+        "description": "Quick, actionable feedback with clear next steps",
+        "steps": ["Example", "Effect", "Change/Continue"],
+        "bestFor": ["corrective", "positive"]
+      },
+      {
+        "id": "idea",
+        "name": "IDEA",
+        "fullName": "Identify-Describe-Encourage-Action",
+        "description": "Collaborative approach fostering two-way conversation",
+        "steps": ["Identify", "Describe", "Encourage", "Action"],
+        "bestFor": ["developmental", "corrective"]
+      },
+      {
+        "id": "feedforward",
+        "name": "Feedforward",
+        "fullName": "Future-Focused Feedback",
+        "description": "Suggestions for future improvement rather than past critique",
+        "steps": ["Future Goal", "Suggestions", "Support Needed"],
+        "bestFor": ["developmental", "positive"]
+      },
+      {
+        "id": "nvc",
+        "name": "NVC",
+        "fullName": "Nonviolent Communication",
+        "description": "Empathetic approach focusing on needs and feelings",
+        "steps": ["Observation", "Feelings", "Needs", "Request"],
+        "bestFor": ["difficult", "corrective"]
+      },
+      {
+        "id": "aid",
+        "name": "AID",
+        "fullName": "Action-Impact-Desired Outcome",
+        "description": "Direct approach for performance issues",
+        "steps": ["Action", "Impact", "Desired Outcome"],
+        "bestFor": ["corrective", "difficult"]
+      },
+      {
+        "id": "coin",
+        "name": "COIN",
+        "fullName": "Context-Observation-Impact-Next Steps",
+        "description": "Comprehensive collaborative feedback",
+        "steps": ["Context", "Observation", "Impact", "Next Steps"],
+        "bestFor": ["developmental", "positive"]
+      },
+      {
+        "id": "radical-candor",
+        "name": "Radical Candor",
+        "fullName": "Care Personally, Challenge Directly",
+        "description": "Balance of caring and directness",
+        "steps": ["Show Care", "Be Direct", "Offer Support"],
+        "bestFor": ["difficult", "developmental"]
+      }
+    ],
+    "culturalContexts": {
+      "regions": [
+        {
+          "id": "north-america",
+          "name": "North America",
+          "countries": ["United States", "Canada", "Mexico"],
+          "characteristics": {
+            "communication": "Direct, explicit, task-oriented",
+            "feedback": "Straightforward, focus on individual achievement",
+            "hierarchy": "Low to medium power distance",
+            "conflict": "Direct confrontation acceptable"
+          }
+        },
+        {
+          "id": "east-asia",
+          "name": "East Asia",
+          "countries": ["Japan", "China", "South Korea", "Taiwan"],
+          "characteristics": {
+            "communication": "Indirect, high-context, relationship-focused",
+            "feedback": "Subtle, often through third party, save face",
+            "hierarchy": "High power distance, respect for authority",
+            "conflict": "Avoid direct confrontation, harmony valued"
+          }
+        },
+        {
+          "id": "western-europe",
+          "name": "Western Europe",
+          "countries": ["Germany", "France", "UK", "Netherlands"],
+          "characteristics": {
+            "communication": "Varies by country, generally direct",
+            "feedback": "Professional, structured, evidence-based",
+            "hierarchy": "Medium power distance",
+            "conflict": "Constructive debate encouraged"
+          }
+        },
+        {
+          "id": "latin-america",
+          "name": "Latin America",
+          "countries": ["Brazil", "Argentina", "Colombia", "Chile"],
+          "characteristics": {
+            "communication": "Warm, personal relationships important",
+            "feedback": "Diplomatic, consider personal feelings",
+            "hierarchy": "High power distance",
+            "conflict": "Indirect, maintain relationships"
+          }
+        },
+        {
+          "id": "middle-east",
+          "name": "Middle East",
+          "countries": ["UAE", "Saudi Arabia", "Egypt", "Israel"],
+          "characteristics": {
+            "communication": "Relationship-based, honor important",
+            "feedback": "Private, preserve dignity",
+            "hierarchy": "High power distance, respect for elders",
+            "conflict": "Mediation preferred, save face"
+          }
+        },
+        {
+          "id": "africa",
+          "name": "Africa",
+          "countries": ["Nigeria", "South Africa", "Kenya", "Ghana"],
+          "characteristics": {
+            "communication": "Community-oriented, storytelling",
+            "feedback": "Group harmony valued, ubuntu philosophy",
+            "hierarchy": "Respect for elders and authority",
+            "conflict": "Community mediation, consensus-building"
+          }
+        },
+        {
+          "id": "south-asia",
+          "name": "South Asia",
+          "countries": ["India", "Pakistan", "Bangladesh", "Sri Lanka"],
+          "characteristics": {
+            "communication": "Hierarchical, indirect for negative news",
+            "feedback": "Respectful, consider seniority",
+            "hierarchy": "High power distance",
+            "conflict": "Avoid confrontation, use intermediaries"
+          }
+        },
+        {
+          "id": "oceania",
+          "name": "Oceania",
+          "countries": ["Australia", "New Zealand"],
+          "characteristics": {
+            "communication": "Direct, egalitarian, informal",
+            "feedback": "Straightforward, balanced with humor",
+            "hierarchy": "Low power distance",
+            "conflict": "Direct but friendly approach"
+          }
+        }
+      ],
+      "dimensions": {
+        "powerDistance": {
+          "high": ["Hierarchical communication", "Formal titles", "Deference to authority"],
+          "low": ["Egalitarian communication", "First-name basis", "Challenge authority acceptable"]
+        },
+        "individualism": {
+          "high": ["Individual recognition", "Personal accountability", "Direct feedback"],
+          "low": ["Group harmony", "Collective responsibility", "Indirect feedback"]
+        },
+        "uncertainty": {
+          "high": ["Structured feedback", "Clear rules", "Detailed documentation"],
+          "low": ["Flexible approach", "Adaptable", "Informal feedback"]
+        },
+        "assertiveness": {
+          "high": ["Direct communication", "Competitive", "Achievement-focused"],
+          "low": ["Cooperative", "Consensus-seeking", "Relationship-focused"]
+        }
+      }
+    },
+    "ui": {
+      "buttons": {
+        "startPractice": "Start Practice",
+        "endSession": "End Session",
+        "submit": "Submit",
+        "cancel": "Cancel",
+        "save": "Save",
+        "edit": "Edit",
+        "delete": "Delete",
+        "next": "Next",
+        "previous": "Previous",
+        "finish": "Finish",
+        "record": "Hold to Record",
+        "recording": "Recording...",
+        "processing": "Processing..."
+      },
+      "labels": {
+        "selectScenario": "Select a Practice Scenario",
+        "selectModel": "Choose AI Model",
+        "selectLanguage": "Language",
+        "selectStyle": "Feedback Style",
+        "transcript": "Transcript",
+        "feedback": "Feedback",
+        "score": "Score",
+        "progress": "Progress",
+        "yourTurn": "Your Turn",
+        "aiResponse": "AI Response"
+      },
+      "messages": {
+        "welcome": "Welcome to FeedBackYes™",
+        "practiceComplete": "Practice session complete!",
+        "pulseSubmitted": "Thank you for completing the pulse check",
+        "agreementSaved": "Team agreement saved successfully",
+        "errorGeneric": "Something went wrong. Please try again.",
+        "noScenarios": "No scenarios available",
+        "loading": "Loading..."
+      },
+      "coachingTips": [
+        "Try using 'I' statements to express your feelings",
+        "Focus on specific behaviors rather than generalizations",
+        "Consider the impact of your words on the listener",
+        "Remember to listen actively and show empathy",
+        "Avoid judgmental language - stick to observable facts",
+        "Suggest solutions rather than just identifying problems",
+        "Acknowledge the other person's perspective",
+        "Use positive framing when possible"
+      ]
+    },
+    "navigation": {
+      "home": "Home",
+      "practice": "Practice",
+      "pulseCheck": "Pulse Check",
+      "agreements": "Team Agreements",
+      "dashboard": "Dashboard",
+      "settings": "Settings",
+      "help": "Help"
+    }
+  }

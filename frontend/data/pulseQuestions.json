@@ -1,0 +1,205 @@
+
+{
+    "pulseChecks": [
+      {
+        "id": "week-1",
+        "week": 1,
+        "questions": [
+          {
+            "id": "comm-1",
+            "pillar": "communication",
+            "question": "How clear were expectations communicated to you this week?",
+            "type": "scale",
+            "scale": {
+              "min": 1,
+              "max": 5,
+              "minLabel": "Very unclear",
+              "maxLabel": "Crystal clear"
+            },
+            "followUpThreshold": 3,
+            "followUpScenario": "unclear-expectations"
+          },
+          {
+            "id": "collab-1",
+            "pillar": "collaboration",
+            "question": "How well did your team collaborate this week?",
+            "type": "scale",
+            "scale": {
+              "min": 1,
+              "max": 5,
+              "minLabel": "Poor collaboration",
+              "maxLabel": "Excellent collaboration"
+            },
+            "followUpThreshold": 3,
+            "followUpScenario": "missed-handoff"
+          },
+          {
+            "id": "decision-1",
+            "pillar": "decision-making",
+            "question": "Were you included in decisions that affected your work?",
+            "type": "radio",
+            "options": [
+              { "value": "always", "label": "Always", "score": 5 },
+              { "value": "usually", "label": "Usually", "score": 4 },
+              { "value": "sometimes", "label": "Sometimes", "score": 3 },
+              { "value": "rarely", "label": "Rarely", "score": 2 },
+              { "value": "never", "label": "Never", "score": 1 }
+            ],
+            "followUpThreshold": 3,
+            "followUpScenario": "decision-reversal"
+          },
+          {
+            "id": "values-1",
+            "pillar": "values-culture",
+            "question": "Did team behaviors align with stated values this week?",
+            "type": "scale",
+            "scale": {
+              "min": 1,
+              "max": 5,
+              "minLabel": "Not at all",
+              "maxLabel": "Completely aligned"
+            },
+            "followUpThreshold": 3,
+            "followUpScenario": "cultural-misalignment"
+          },
+          {
+            "id": "stress-1",
+            "pillar": "stress-wellbeing",
+            "question": "How manageable was your stress level this week?",
+            "type": "scale",
+            "scale": {
+              "min": 1,
+              "max": 5,
+              "minLabel": "Overwhelming",
+              "maxLabel": "Very manageable"
+            },
+            "followUpThreshold": 3,
+            "followUpScenario": "workload-boundaries"
+          },
+          {
+            "id": "conflict-1",
+            "pillar": "conflict-management",
+            "question": "Were any conflicts resolved constructively this week?",
+            "type": "radio",
+            "options": [
+              { "value": "no-conflicts", "label": "No conflicts occurred", "score": 5 },
+              { "value": "yes-resolved", "label": "Yes, resolved well", "score": 4 },
+              { "value": "partially", "label": "Partially resolved", "score": 3 },
+              { "value": "unresolved", "label": "Conflicts remain unresolved", "score": 2 },
+              { "value": "escalated", "label": "Conflicts escalated", "score": 1 }
+            ],
+            "followUpThreshold": 3,
+            "followUpScenario": "peer-disagreement"
+          }
+        ]
+      },
+      {
+        "id": "week-2",
+        "week": 2,
+        "questions": [
+          {
+            "id": "comm-2",
+            "pillar": "communication",
+            "question": "Did you feel heard when you shared ideas or concerns?",
+            "type": "scale",
+            "scale": {
+              "min": 1,
+              "max": 5,
+              "minLabel": "Not heard at all",
+              "maxLabel": "Completely heard"
+            },
+            "followUpThreshold": 3,
+            "followUpScenario": "unclear-expectations"
+          },
+          {
+            "id": "collab-2",
+            "pillar": "collaboration",
+            "question": "How smooth were handoffs between team members?",
+            "type": "scale",
+            "scale": {
+              "min": 1,
+              "max": 5,
+              "minLabel": "Very problematic",
+              "maxLabel": "Seamless"
+            },
+            "followUpThreshold": 3,
+            "followUpScenario": "missed-handoff"
+          },
+          {
+            "id": "decision-2",
+            "pillar": "decision-making",
+            "question": "How transparent was the decision-making process?",
+            "type": "scale",
+            "scale": {
+              "min": 1,
+              "max": 5,
+              "minLabel": "Completely opaque",
+              "maxLabel": "Fully transparent"
+            },
+            "followUpThreshold": 3,
+            "followUpScenario": "decision-reversal"
+          },
+          {
+            "id": "values-2",
+            "pillar": "values-culture",
+            "question": "Did you observe behaviors that conflicted with team values?",
+            "type": "radio",
+            "options": [
+              { "value": "none", "label": "No conflicts observed", "score": 5 },
+              { "value": "minor", "label": "Minor conflicts", "score": 3 },
+              { "value": "significant", "label": "Significant conflicts", "score": 1 }
+            ],
+            "followUpThreshold": 4,
+            "followUpScenario": "cultural-misalignment"
+          },
+          {
+            "id": "stress-2",
+            "pillar": "stress-wellbeing",
+            "question": "Did you have time for breaks and self-care this week?",
+            "type": "radio",
+            "options": [
+              { "value": "plenty", "label": "Plenty of time", "score": 5 },
+              { "value": "adequate", "label": "Adequate time", "score": 4 },
+              { "value": "some", "label": "Some time", "score": 3 },
+              { "value": "little", "label": "Very little time", "score": 2 },
+              { "value": "none", "label": "No time at all", "score": 1 }
+            ],
+            "followUpThreshold": 3,
+            "followUpScenario": "workload-boundaries"
+          },
+          {
+            "id": "conflict-2",
+            "pillar": "conflict-management",
+            "question": "How comfortable do you feel raising disagreements with the team?",
+            "type": "scale",
+            "scale": {
+              "min": 1,
+              "max": 5,
+              "minLabel": "Very uncomfortable",
+              "maxLabel": "Completely comfortable"
+            },
+            "followUpThreshold": 3,
+            "followUpScenario": "peer-disagreement"
+          }
+        ]
+      }
+    ],
+    "adaptiveQuestions": {
+      "lowScore": {
+        "communication": "What specific communication challenge did you face?",
+        "collaboration": "What blocked effective collaboration?",
+        "decision-making": "Which decision process was problematic?",
+        "values-culture": "What value conflict did you observe?",
+        "stress-wellbeing": "What is your primary stress source?",
+        "conflict-management": "What prevented conflict resolution?"
+      },
+      "highScore": {
+        "communication": "What communication practice worked well?",
+        "collaboration": "What enabled great collaboration?",
+        "decision-making": "What made decisions effective?",
+        "values-culture": "How were values demonstrated?",
+        "stress-wellbeing": "What helped manage stress?",
+        "conflict-management": "How was conflict resolved successfully?"
+      }
+    }
+  }
