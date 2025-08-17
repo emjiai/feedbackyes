@@ -3,6 +3,7 @@ import config from '@/data/config.json';
 import scenarios from '@/data/scenarios.json';
 import pulseQuestions from '@/data/pulseQuestions.json';
 import teamAgreements from '@/data/teamAgreements.json';
+import dashboardMetrics from '@/data/dashboardMetrics.json';
 
 export interface Config {
   brand: {
@@ -212,6 +213,10 @@ class DataService {
   }
 
   // Team Agreement methods
+  getTeamAgreements() {
+    return teamAgreements;
+  }
+
   getAllAgreements(): TeamAgreement[] {
     return teamAgreements.agreements as TeamAgreement[];
   }
@@ -230,6 +235,11 @@ class DataService {
 
   getAgreementTemplates() {
     return teamAgreements.templates;
+  }
+
+  // Dashboard methods
+  getDashboardMetrics() {
+    return dashboardMetrics;
   }
 
   // Mock data creation methods (for demo purposes)

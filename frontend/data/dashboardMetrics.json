@@ -1,0 +1,107 @@
+{
+  "overview": {
+    "totalPracticeSessions": 47,
+    "averageFeedbackScore": 7.8,
+    "activeAgreements": 6,
+    "teamMembers": 12,
+    "lastUpdated": "2025-02-17T16:30:00Z"
+  },
+  "practiceMetrics": {
+    "sessionsThisWeek": 8,
+    "sessionsThisMonth": 23,
+    "totalSessions": 47,
+    "averageSessionDuration": 12.5,
+    "completionRate": 89,
+    "topPillars": [
+      { "pillar": "communication", "sessions": 15, "avgScore": 8.2 },
+      { "pillar": "conflict-management", "sessions": 12, "avgScore": 7.4 },
+      { "pillar": "collaboration", "sessions": 10, "avgScore": 8.0 },
+      { "pillar": "decision-making", "sessions": 6, "avgScore": 7.9 },
+      { "pillar": "stress-wellbeing", "sessions": 4, "avgScore": 7.1 }
+    ]
+  },
+  "feedbackScores": {
+    "overall": 7.8,
+    "trend": "improving",
+    "weeklyScores": [
+      { "week": "2025-W06", "score": 7.2 },
+      { "week": "2025-W07", "score": 7.8 },
+      { "week": "2025-W08", "score": 8.1 }
+    ],
+    "byMethod": [
+      { "method": "sbi", "avgScore": 8.3, "usage": 18 },
+      { "method": "desc", "avgScore": 7.1, "usage": 12 },
+      { "method": "star", "avgScore": 8.0, "usage": 10 },
+      { "method": "radical-candor", "avgScore": 7.6, "usage": 7 }
+    ]
+  },
+  "pulseResults": {
+    "lastPulseDate": "2025-02-15",
+    "participationRate": 83,
+    "overallSentiment": "positive",
+    "averageRatings": {
+      "communication": 4.2,
+      "collaboration": 4.0,
+      "workload": 3.8,
+      "support": 4.1,
+      "growth": 3.9
+    },
+    "trends": [
+      { "category": "communication", "trend": "stable", "change": 0.1 },
+      { "category": "collaboration", "trend": "improving", "change": 0.3 },
+      { "category": "workload", "trend": "declining", "change": -0.2 },
+      { "category": "support", "trend": "improving", "change": 0.2 },
+      { "category": "growth", "trend": "stable", "change": 0.0 }
+    ]
+  },
+  "riskFlags": [
+    {
+      "id": "workload-stress",
+      "level": "medium",
+      "title": "Workload Concerns",
+      "description": "Pulse check shows declining workload satisfaction",
+      "impact": "Team wellbeing and productivity",
+      "recommendation": "Review workload distribution and boundaries agreement",
+      "linkedAgreement": "wellbeing-agreement-1",
+      "affectedMembers": 5
+    },
+    {
+      "id": "feedback-avoidance",
+      "level": "low",
+      "title": "Difficult Conversation Avoidance",
+      "description": "Low practice sessions for conflict management scenarios",
+      "impact": "Unresolved issues may escalate",
+      "recommendation": "Encourage practice with conflict resolution scenarios",
+      "linkedAgreement": "conflict-agreement-1",
+      "affectedMembers": 8
+    }
+  ],
+  "achievements": [
+    {
+      "id": "communication-champion",
+      "title": "Communication Champion",
+      "description": "Team exceeded communication practice goals",
+      "earnedDate": "2025-02-10",
+      "icon": "🏆"
+    },
+    {
+      "id": "feedback-consistency",
+      "title": "Consistent Feedback",
+      "description": "Maintained regular feedback practice for 4 weeks",
+      "earnedDate": "2025-02-08",
+      "icon": "📈"
+    }
+  ],
+  "upcomingMilestones": [
+    {
+      "title": "Monthly Team Pulse",
+      "date": "2025-03-01",
+      "type": "pulse-check"
+    },
+    {
+      "title": "Quarterly Agreement Review",
+      "date": "2025-03-15",
+      "type": "agreement-review"
+    }
+  ]
+}
