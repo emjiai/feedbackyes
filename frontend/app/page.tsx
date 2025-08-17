@@ -3,7 +3,7 @@ import React from 'react';
 import Link from 'next/link';
 import { dataService } from '@/lib/services/dataService';
 
-const HomePage: React.FC = () => {
+export default function HomePage() {
   const config = dataService.getConfig();
   const { brand, pillars, ui } = config;
 
@@ -139,6 +139,4 @@ const HomePage: React.FC = () => {
       </section>
     </div>
   );
-};
-
-export default HomePage;
+}

@@ -156,17 +156,12 @@
 │   ├── 📁 images/                        # Images and icons
 │   └── 📁 fonts/                         # Custom fonts (if any)
 │
-├── 📁 prisma/                            # Database schema (future)
-│   ├── schema.prisma                     # Prisma schema
-│   └── seed.ts                           # Database seeding
-│
 ├── 📄 Root Configuration Files
 │   ├── next.config.js                    # Next.js configuration
 │   ├── tailwind.config.ts                # Tailwind configuration
 │   ├── tsconfig.json                     # TypeScript configuration
 │   ├── package.json                      # Dependencies
 │   ├── .env.local                        # Environment variables
-│   ├── .env.example                      # Environment template
 │   ├── middleware.ts                     # Next.js middleware
 │   └── README.md                         # Documentation
 │
