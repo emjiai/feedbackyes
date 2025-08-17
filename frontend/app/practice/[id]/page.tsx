@@ -1,14 +1,17 @@
+"use client";
+
 // pages/practice/[id].tsx
 import React, { useState, useEffect } from 'react';
-import { useRouter } from 'next/router';
-import { dataService } from '../../services/dataService';
-import ConversationTimeline from '../../components/simulation/ConversationTimeline';
-import FeedbackPanel from '../../components/simulation/FeedbackPanel';
-import ModelSelector from '../../components/voice/ModelSelector';
+import { useRouter, useParams } from 'next/navigation';
+import { dataService } from '@/lib/services/dataService';
+import ConversationTimeline from '@/components/simulation/ConversationTimeline';
+import FeedbackPanel from '@/components/simulation/FeedbackPanel';
+import ModelSelector from '@/components/voice/ModelSelector';
 
-const PracticeSessionPage: React.FC = () => {
+export default function PracticeSessionPage() {
   const router = useRouter();
-  const { id } = router.query;
+  const params = useParams();
+  const id = params.id;
   
   const [scenario, setScenario] = useState<any>(null);
   const [selectedModel, setSelectedModel] = useState(dataService.getDefaultModel().id);
@@ -56,7 +59,7 @@ const PracticeSessionPage: React.FC = () => {
   }
 
   const pillar = config.pillars.find(p => p.id === scenario.pillar);
-  const style = config.feedbackStyles.find(s => s.id === scenario.suggestedStyle);
+  const style = config.feedbackTypes.find((s: { id: string }) => s.id === scenario.suggestedStyle);
 
   return (
     <div className="max-w-6xl mx-auto">
@@ -241,6 +244,4 @@ const PracticeSessionPage: React.FC = () => {
       )}
     </div>
   );
-};
-
-export default PracticeSessionPage;
+}

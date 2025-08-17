@@ -1,12 +1,14 @@
+"use client";
+
 // pages/practice/custom.tsx
 import React, { useState, useEffect } from 'react';
-import { useRouter } from 'next/router';
-import { dataService } from '../../services/dataService';
-import ConversationTimeline from '../../components/simulation/ConversationTimeline';
-import FeedbackPanel from '../../components/simulation/FeedbackPanel';
-import CulturalCoachingPanel from '../../components/simulation/CulturalCoachingPanel';
+import { useRouter } from 'next/navigation';
+import { dataService } from '@/lib/services/dataService';
+import ConversationTimeline from '@/components/simulation/ConversationTimeline';
+import FeedbackPanel from '@/components/simulation/FeedbackPanel';
+import CulturalCoachingPanel from '@/components/simulation/CulturalCoachingPanel';
 
-const CustomPracticePage: React.FC = () => {
+export default function CustomPracticePage() {
   const router = useRouter();
   const [rolePlayConfig, setRolePlayConfig] = useState<any>(null);
   const [isSessionActive, setIsSessionActive] = useState(false);
@@ -374,6 +376,4 @@ const CustomPracticePage: React.FC = () => {
     
     return descriptions[methodId]?.[step] || '';
   }
-};
-
-export default CustomPracticePage;
+}

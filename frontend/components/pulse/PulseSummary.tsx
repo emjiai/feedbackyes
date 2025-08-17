@@ -1,3 +1,5 @@
+"use client"
+
 // components/pulse/PulseSummary.tsx
 import React from 'react';
 import Link from 'next/link';

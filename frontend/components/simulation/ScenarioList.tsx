@@ -1,3 +1,5 @@
+"use client";
+
 // components/simulation/ScenarioList.tsx
 import React from 'react';
 import Link from 'next/link';
@@ -15,7 +17,7 @@ interface ScenarioListProps {
   }>;
 }
 
-const ScenarioList: React.FC<ScenarioListProps> = ({ scenarios }) => {
+export default function ScenarioList({ scenarios }: ScenarioListProps) {
   const config = dataService.getConfig();
   const { pillars, feedbackMethods } = config;
 
@@ -95,6 +97,4 @@ const ScenarioList: React.FC<ScenarioListProps> = ({ scenarios }) => {
       })}
     </div>
   );
-};
-
-export default ScenarioList;
+}

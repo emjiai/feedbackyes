@@ -36,7 +36,7 @@ interface RolePlaySetupProps {
   onCancel: () => void;
 }
 
-const RolePlaySetup: React.FC<RolePlaySetupProps> = ({ onComplete, onCancel }) => {
+export default function RolePlaySetup({ onComplete, onCancel }: RolePlaySetupProps) {
   const [currentStep, setCurrentStep] = useState(1);
   const [config, setConfig] = useState<RolePlayConfig>({
     giver: { name: '', role: '' },
@@ -565,7 +565,5 @@ const RolePlaySetup: React.FC<RolePlaySetupProps> = ({ onComplete, onCancel }) =
         )}
       </div>
     </div>
-  );
-};
-
-export default RolePlaySetup;
+  )
+}
